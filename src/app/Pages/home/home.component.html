@@ -1,1 +1,40 @@
-<p>home works!</p>
+<section>
+    <p>
+        Cette entreprise est destinée aux individus de toutes tranches d'âge, passionnés par les figurines et aux grands nostalgiques des dessins animés.
+    </p>
+</section>
+
+<section>
+    <div class="encadrement-contenu">
+
+        <h2 class="titre">
+            Top Ventes
+        </h2>
+
+        <div *ngIf="topVentes && topVentes.length" class="top-ventes">
+            <div *ngFor="let product of topVentes" class="product-item" >
+                <img [src]="product.image" alt="Image {{ product.nom }}">
+                <h3> {{ product.nom }} </h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<h2>
+    Nos produits
+</h2>
+
+<section *ngIf="products && products.length" class="produit mt-5 mb-5"> 
+
+    <div class="product-card" *ngFor=" let product of products">
+        <img [src]="product.image" alt="image {{ product.nom }}">
+
+        <h3>{{ product.nom }}</h3>
+
+        <p>{{ product.description }}</p>
+        <p style="font-weight: bold">{{ product.prix | currency : 'EUR' : 'symbol' : '1.2-2' : 'fr' }}</p>
+    </div>
+
+</section>
+

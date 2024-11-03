@@ -1,1 +1,12 @@
-<p>produit works!</p>
+<section *ngIf="product">
+    <div>
+        <img [src]="product.image" alt="figurine {{product.nom}} ">
+    </div>
+
+    <div>
+        <h2>{{product.nom}}</h2>
+
+        <p> {{product.description}} </p>
+        <p> {{product.prix | currency : 'EUR' : 'symbol' : '1.2-2' : 'fr'}} </p>
+    </div>
+</section>
