@@ -1,1 +1,16 @@
-<p>header works!</p>
+<header>
+  <div class="header-contenu">
+    <div class="logo-conteneur">
+      <a [routerLink]="['/']">
+        <img
+          class="logo"
+          [src]="Logo"
+          alt="Le logo de l'entreprise, un casque de viking"
+        />
+      </a>
+        <div>
+         <app-navbar></app-navbar>
+        </div>
+    </div>
+  </div>
+</header>

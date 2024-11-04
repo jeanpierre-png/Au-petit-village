@@ -1,1 +1,43 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="conteneur-fluid">
+    <!-- BOUTON burger pour les petits écrans -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      aria-controls="navbarNav"
+      [attr.aria-expanded]="isMenuOpen"
+      aria-label="Toggle navigation"
+    >
+      &#9776; <!-- Icône burger -->
+    </button>
+
+    <!-- Menus de nav -->
+    <div
+      class="navbar-menu"
+      [ngClass]="{ 'open': isMenuOpen }"
+      (click)="closeMenu()"
+      id="navbarNav"
+    >
+      <a
+        class="nav-link"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
+        >
+         Accueil
+        </a
+      >
+      <a
+        class="nav-link"
+        routerLink="/a-propos"
+        routerLinkActive="active"
+        (click)="closeMenu()"
+        >
+         A propos
+        </a
+      >
+    </div>
+  </div>
+</nav>

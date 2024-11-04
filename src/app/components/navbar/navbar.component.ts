@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  activeLink: string = 'home'
+  isMenuOpen = false;
+
+  linkClick(link: string): void {
+    this.activeLink = link;
+    this.isMenuOpen = false;
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 
 }
