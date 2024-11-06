@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  twitter: string = "../../../assets/twitter.png";
+  instagram: string = "../../../assets/instagram.png";
+  copyright: string = "../../../assets/droits-dauteur.png"
 }
