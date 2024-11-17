@@ -42,8 +42,38 @@
     height: 300px;
 }
 
+.trie {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-bottom: 100px;
+} 
+
+.trie input[type="text"] {
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+      
+.trie select {
+
+ border: 1px solid #ccc;
+
+}
+
 @media (max-width: 768px){
     .product-item img{
         width: 100%;
     } 
+    .trie {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .trie input[type="text"], .trie select {
+        width: 100%;
+    }
 }

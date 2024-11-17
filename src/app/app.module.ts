@@ -14,6 +14,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsService } from './service/products.service';
+import { FilterByNamePipe } from './pipe/filter-by-name.pipe';
+import { SortByPricePipe } from './pipe/sort-by-price.pipe';
 
 registerLocaleData(locaFr, 'fr');
 
@@ -25,7 +27,9 @@ registerLocaleData(locaFr, 'fr');
     ProduitComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    FilterByNamePipe,
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,

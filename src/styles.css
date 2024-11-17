@@ -17,4 +17,9 @@ h1, h2, h3, h4 {
 a {
     text-decoration: none;
     color: #151217;
+    vertical-align: middle;
+}
+
+a:hover {
+    color: #DA001E ;
 }
