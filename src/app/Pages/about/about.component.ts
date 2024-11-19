@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  tel: string = "../../../assets/appel-sur-smartphone.png";
+  email: string = "../../../assets/email.png";
+
 }

@@ -1,3 +1,13 @@
 .a-propos {
     text-align: center;
 }
+
+.tel, .email{
+    width: 15px;
+    vertical-align: middle;
+    
+}
+
+a{
+    margin: 5px;
+}
