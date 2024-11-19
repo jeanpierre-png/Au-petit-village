@@ -9,17 +9,17 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
-    /* title: 'Accueil'  */
+    title: 'Au Petit Village' 
   },
   {
     path: 'produit/:id',
     component: ProduitComponent,
-    /* title: 'Produits' */
+    title: 'Produits'
   },
   {
     path: 'a-propos',
     component: AboutComponent,
-   /*  title: 'À propos' */
+    title: 'À propos'
   }
 
 ];
